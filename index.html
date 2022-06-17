@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lightgall/css/lightgallery-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <title>Best of</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="h1">Terénní seminář <span class="h1--span">L2 2021/2022</span></h1>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="./index.html"><span>BEST OF</span></a></li>
+                <li class="li"><a href="./temata.html">TÉMATA</a></li>
+                <li class="li"><a href="./scena.html">SCÉNA</a></li>
+                <li class="li"><a href="./galerie.html">GALERIE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="best_of">
+        <div class="best_of--text">
+            <p><strong>Kdo jsem?</strong></p>
+            <p>Jmenuji se Karolína Fučíková. Studuji na SPŠSE a VOŠ Liberec a jsem studentkou druhého ročníku technického lycea.</p>
+            <p><strong>Kdy a kde?</strong></p>
+            <p>Tento Terénní seminář jsem fotila 14.4.2022 v Liberci. Fotky jsou z okolí školy, TUL, a z okolí liberecké přehrady.</p> 
+            <p><strong>Zadání</strong></p>
+            <p>Zadáním bylo vyfotit BEST OF fotku neboli nejlepší fotku z celého semináře. Dále vyfotit fotku na 3 témata a jednu scénu z pěti různých pohledů.</p>
+        </div>
+        <div class="best_of--img" id="my-best-of">
+            <figure class="best-of--fotka">
+                <a href="./images/Best_of_full.jpg"><img src="./images/Best_of.jpg" alt="Best of - Kachny na vodě"></a>
+                <figcaption class="best_of--figcaption">Best of</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer--mezera"><span class="footer--seminář">&copy; Terénní Seminář 2022</span></div>
+        <div class="footer--mezera"><a href="mailto://kaja.fucikova@email.cz"><span>kaja.fucikova@email.cz</span></a></div>
+        <div class="footer--mezera"><a href="https://pslib.cz/"><span>SPŠSE a VOŠ Liberec</span></a></div>
+    </footer>
+
+    <script src="./lightgall/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('my-best-of'), {
+            selector: '.best-of--fotka > a',
+        });
+    </script>
+</body>
+</html>

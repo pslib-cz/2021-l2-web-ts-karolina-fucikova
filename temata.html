@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lightgall/css/lightgallery-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <title>Témata</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="h1">Terénní seminář <span class="h1--span">L2 2021/2022</span></h1>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="./index.html">BEST OF</a></li>
+                <li class="li"><a href="./temata.html"><span>TÉMATA</span></a></li>
+                <li class="li"><a href="./scena.html">SCÉNA</a></li>
+                <li class="li"><a href="./galerie.html">GALERIE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="temata" id="my-temata">
+            <div class="temata__fotka">
+                <figure class="temata__fotka">
+                    <a href="./images/Křehká_krása_full.JPG"><img src="./images/Křehká_krása.jpg" alt="Křehká krása - žluté květiny"></a>
+                    <figcaption class="temata--figcaption">Křehká krása</figcaption>
+                </figure>
+                    <span class="temata--zamer">Kontrast</span>
+            </div>
+            <div class="temata__fotka">
+                <figure class="temata__fotka">
+                    <a href="./images/Svět_bez_barev_full.jpg"><img src="./images/Svět_bez_barev.jpg" alt="Svět bez barev - Grand hotel Zlatý lev"></a>
+                    <figcaption class="temata--figcaption">Svět bez barev</figcaption>
+                </figure>
+                    <span class="temata--zamer">Symetrie</span>
+            </div>
+            <div class="temata__fotka">
+                <figure class="temata__fotka">
+                    <a href="./images/Časy_minulé_full.jpg"><img src="./images/Časy_minulé.jpg" alt="Časy minulé - Lázně v Liberci"></a>
+                    <figcaption class="temata--figcaption">Časy minulé</figcaption>
+                </figure>    
+                    <span class="temata--zamer">Perspektiva</span>
+            </div>
+    </main>
+    <footer class="footer">
+            <div class="footer--mezera"><span class="footer--seminář">&copy; Terénní Seminář 2022</span></div>
+            <div class="footer--mezera"><a href="mailto://kaja.fucikova@email.cz"><span>kaja.fucikova@email.cz</span></a></div>
+            <div class="footer--mezera"><a href="https://pslib.cz/"><span>SPŠSE a VOŠ Liberec</span></a></div>
+    </footer>
+
+    <script src="./lightgall/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('my-temata'), {
+            selector: '.temata__fotka > a',
+        });
+    </script>
+</body>
+</html>

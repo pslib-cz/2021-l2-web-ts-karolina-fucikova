@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lightgall/css/lightgallery-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <title>Scéna</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="h1">Terénní seminář <span class="h1--span">L2 2021/2022</span></h1>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="./index.html">BEST OF</a></li>
+                <li class="li"><a href="./temata.html">TÉMATA</a></li>
+                <li class="li"><a href="./scena.html"><span>SCÉNA</span></a></li>
+                <li class="li"><a href="./galerie.html">GALERIE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="scena" id="my-scena">
+                <figure class="scena__fotka">
+                    <a href="./images/foto1_full.jpg"><img src="./images/foto1.jpg" alt="Schody zpředu"></a>
+                    <figcaption class="scena_popis--figcaption">Pohled zpředu</figcaption>
+                </figure>
+    
+                <figure class="scena__fotka">
+                    <a href="./images/foto2_full.jpg"><img src="./images/foto2.jpg" alt="Schody zleva"></a>
+                    <figcaption class="scena_popis--figcaption">Pohled zleva</figcaption>
+                </figure>
+    
+                <figure class="scena__fotka">
+                    <a href="./images/foto3_full.jpg"><img src="./images/foto3.jpg" alt="Schody shora"></a>
+                    <figcaption class="scena_popis--figcaption">Pohled shora</figcaption>
+                </figure>
+
+                <figure class="scena__fotka">
+                    <a href="./images/foto4_full.jpg"><img src="./images/foto4.jpg" alt="Schody zprava"></a>
+                    <figcaption class="scena--figcaption">Pohled zprava</figcaption>
+                </figure>   
+
+                <figure class="scena__fotka">
+                    <a href="./images/foto5_full.jpg"><img src="./images/foto5.jpg" alt="Schody zdola"></a>
+                    <figcaption class="scena--figcaption">Pohled zdola</figcaption>
+                </figure>
+    </main>
+    <footer class="footer">
+        <div class="footer--mezera"><span class="footer--seminář">&copy; Terénní Seminář 2022</span></div>
+        <div class="footer--mezera"><a href="mailto://kaja.fucikova@email.cz"><span>kaja.fucikova@email.cz</span></a></div>
+        <div class="footer--mezera"><a href="https://pslib.cz/"><span>SPŠSE a VOŠ Liberec</span></a></div>
+    </footer>
+
+    <script src="./lightgall/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('my-scena'), {
+            selector: '.scena__fotka > a',
+        });
+    </script>
+</body>
+</html>
